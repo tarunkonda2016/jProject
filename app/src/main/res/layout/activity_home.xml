@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.android.loginapplication.RegistrationActivity">
+
+    <RelativeLayout
+        android:id="@+id/linHome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:text="Home screen"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@id/linHome"
+            android:gravity="center"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Hobbies"
+                android:paddingRight="20dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Hobbies"
+                android:paddingRight="20dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/tv_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:focusable="true"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:onClick="@{(v)->onClickHandler.onLoginClick(context,v)}"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:enabled="false"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>
